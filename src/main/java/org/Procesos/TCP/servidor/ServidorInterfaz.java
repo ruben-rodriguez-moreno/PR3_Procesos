@@ -1,4 +1,4 @@
-package org.Procesos.servidor;
+package org.Procesos.TCP.servidor;
 
 import javax.swing.*;
 
@@ -10,6 +10,8 @@ public class ServidorInterfaz extends JFrame {
         setTitle("Servidor");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setContentPane(contentPane);
+        setSize(500, 500);
+        setAlwaysOnTop(true);
         pack();
         setLocationRelativeTo(null);
     }

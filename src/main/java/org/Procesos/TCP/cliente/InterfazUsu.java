@@ -1,4 +1,4 @@
-package org.Procesos.cliente;
+package org.Procesos.TCP.cliente;
 
 import lombok.Getter;
 
@@ -19,6 +19,7 @@ public class InterfazUsu extends JFrame {
         setTitle("Nombre de Usuario");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setContentPane(contentPane);
+        setSize(200, 200);
         pack();
         setLocationRelativeTo(null);
 
@@ -40,12 +41,4 @@ public class InterfazUsu extends JFrame {
         return isOpen;
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new InterfazUsu().setVisible(true);
-            }
-        });
-    }
 }
